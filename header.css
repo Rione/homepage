@@ -19,7 +19,7 @@
   background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*animation: header_animation 10s ease 0s infinite alternate;*/
+  animation: header_animation 10s ease 0s infinite alternate;
 }
 
 @keyframes header_animation {
