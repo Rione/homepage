@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.main {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+.contents {
+  position: relative;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  border: 2px solid #000;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.contents h1 {
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 3px solid #000;
+  color: #222;
+}
+
+.contents section {
+  margin: 50px;
+}
+
+.contents h2 {
+  display: inline-block;
+  border-bottom: 2px solid #000;
+}
+.contents p {
+  margin-left: 20px;
+  margin-top: 10px;
+}

@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+body {
+  background-color: #BBB;
+}
+
+.main {
+  position: absolute;
+  top: 420px;
+  width: 100%;
+  z-index: -5;
+  background-color: #FFF;
+}
+
+.contents {
+  position: relative;
+  width: 1000px;
+  height: 700px;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***************************************************************/
+.latest_news_board {
+  position: absolute;
+  width: 640px;
+  height: 600px;
+  margin: 20px;
+  /*width: calc(150px * 4 + 22px * 6);*/
+  background-color: #FFF;
+  border: 2px solid #999;
+  border-radius: 10px;
+}
+
+.latest_news_board h1 {
+  margin: 20px;
+  border-bottom: 1px solid #000;
+  color: #222;
+}
+
+.latest_news_board .list_box {
+  display: inline-block;
+  justify-content: space-evenly;
+  top: 20px;
+  margin-left: 8px;
+}
+
+/***************************************************************/
+.list_box .list_item {
+  width: 150px;
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
+  margin: 1px;
+  transition: 0.2s linear;
+  position: relative;
+  display: inline-block;
+}
+
+.list_box .list_item a {
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/*
+.latest_news_board .list_item:hover {
+  background-color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px 5px;
+}*/
+.list_box .list_item a:hover>p {
+  height: 40px;
+}
+
+.list_box .list_item a:hover>img {
+  animation: blink 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.list_box .list_item a:hover {
+  border: 2px solid #F00;
+}
+
+.list_box .list_item p {
+  font-size: 14px;
+  color: WHITE;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: calc(100% - 10px);
+  overflow: hidden;
+  height: auto;
+  padding: 5px;
+}
+
+.list_box .list_item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.list_box .list_item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contents .twitter {
+  position: relative;
+  top: 20px;
+  width: 300px;
+  height: 600px;
+  left: 680px;
+  font-size: 15px;
+  border: 2px solid #999;
+  border-radius: 5px;
+}
+
+.news_boards {
+  position: absolute;
+  top: 250px;
+  width: 640px;
+  height: 300px;
+  margin: 20px;
+  /*width: calc(150px * 4 + 22px * 6);*/
+  background-color: #FFF;
+  border: 2px solid #999;
+  border-radius: 10px;
+}
+
+.news_boards h1 {
+  margin: 20px;
+  border-bottom: 1px solid #000;
+  color: #222;
+}
+
+.news_boards .news_iframe {
+  height: 100%;
+  margin-left: 20px;
+  border-style: none;
+}
+
+.about {
+  position: relative;
+  width: 1000px;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.about h1 {
+  margin: 50px;
+  font-size: 30px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+}
+
+.about p {
+  font-size: 18px;
+}
