@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/***************************************************************/
+/*共通*/
+/***************************************************************/
 .main {
   margin-top: 100px;
   width: 100%;
@@ -23,13 +26,36 @@
 
 .contents section {
   margin: 50px;
+  text-align: center;
 }
 
 .contents h2 {
   display: inline-block;
   border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+  vertical-align:
 }
+
 .contents p {
   margin-left: 20px;
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/***************************************************************/
+/*横480px以上(PC, 横向きタブレット)*/
+/***************************************************************/
+@media screen and (min-width: 480px) {
+  .contents p {
+    font-size: 20px;
+  }
+}
+
+/***************************************************************/
+/*横480px以下(縦向きタブレット)*/
+/***************************************************************/
+@media screen and (max-width: 480px) {
+  .contents p {
+    font-size: 15px;
+  }
 }

@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/***************************************************************/
+/*共通*/
+/***************************************************************/
 .main {
   margin-top: 100px;
   width: 100%;
@@ -21,7 +24,6 @@
   color: #222;
 }
 
-
 .contents section {
   margin: 30px;
 }
@@ -40,12 +42,35 @@
   list-style: none;
 }
 
-
-
 .map_frame {
   display: inline-block;
   margin-left: 25px;
-  width: calc(100vw - 50px);
-  height: calc(100vw - 50px);
   border: 2px solid #000;
+}
+
+/***************************************************************/
+/*横480px以上(PC, 横向きタブレット)*/
+/***************************************************************/
+@media screen and (min-width: 480px) {
+
+  .contents section {
+    position: absolute;
+  }
+
+  .map_frame {
+    position: relative;
+    left: 500px;
+    width: calc(100% - 550px);
+    max-width: 450px;
+    height: 450px;
+  }
+}
+/***************************************************************/
+/*横480px以下(縦向きタブレット)*/
+/***************************************************************/
+@media screen and (max-width: 480px) {
+  .map_frame {
+    width: calc(100vw - 50px);
+    height: calc(100vw - 50px);
+  }
 }
