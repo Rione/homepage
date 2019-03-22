@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/***************************************************************/
+/*共通*/
+/***************************************************************/
+.main {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.contents {
+  position: relative;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  margin-bottom: 50px;
+}
+
+.contents h1 {
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 3px solid #000;
+  color: #222;
+}
+
+.contents section {
+  margin: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contents h2 {
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  vertical-align:
+}
+
+.contents p {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contents p {
+  text-align: center;
+}
+
+.contents a {
+  display: block;
+  margin: 10px;
+}
+
+/***************************************************************/
+/*横480px以上(PC, 横向きタブレット)*/
+/***************************************************************/
+@media screen and (min-width: 480px) {
+  .contents p {
+    font-size: 20px;
+  }
+}
+
+/***************************************************************/
+/*横480px以下(縦向きタブレット)*/
+/***************************************************************/
+@media screen and (max-width: 480px) {
+  .contents p {
+    font-size: 15px;
+  }
+}
